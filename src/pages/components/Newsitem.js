@@ -2,13 +2,13 @@ import Link from "next/link";
 import styles from "../../styles/NewsItem.module.css";
 
 export default function NewsItem({ news }) {
-  const { time, name, slug } = news; 
+  const {date, time, name, slug } = news; 
 
   return (
     <div className={styles.news}>
       <div className={styles.info}>
         <span>
-        {time}
+        {date} {time}
         </span>
         <h3>{name}</h3>
       </div>
