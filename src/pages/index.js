@@ -35,11 +35,13 @@ export default function Home({ news }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch(`${API_URL}/api/news`);
   const news = await res.json();
+
   return {
-    props: { news },
+    props: { news: news.slice(0, 5) },
+    revalidate: 1,
   };
 }
 
