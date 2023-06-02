@@ -43,7 +43,6 @@ export async function getServerSideProps() {
     props: {
       news: news.slice(0, 5),
     },
-    revalidate: 1
   };
 }
 
