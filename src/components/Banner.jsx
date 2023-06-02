@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import banner from '.././../Images/banner1.jpg'
+import banner from '../Images/banner.png'
 
 export default function Banner() {
   return (
