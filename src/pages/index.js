@@ -27,7 +27,7 @@ export default function Home({ news }) {
         ))}
         {news.length > 0 && (
           <Link href="/news">
-            <div className="btn-secondary">View All News</div>
+            <div className="btn">View All News</div>
           </Link>
         )}
       </main>
