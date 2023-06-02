@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import logo from '../Images/logo.png'
+import logo from '../../public/Images/logo.png'
 import styles from "../styles/Navbar.module.css"
 
 export default function Navbar() {
