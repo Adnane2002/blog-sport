@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
-import Navbar from './components/Navbar'
-import Banner from './components/Banner'
+import Navbar from '../components/Navbar'
+import Banner from '../components/Banner'
 import {API_URL} from '../../config/index'
-import NewsItem from './components/Newsitem'
+import NewsItem from '../components/Newsitem'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
