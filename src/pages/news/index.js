@@ -14,13 +14,13 @@ export default function News({ news }) {
         <Navbar />
         <Banner />
       </main>
-      <h1>News</h1>
+      <h1 className='title'>News</h1>
       {news && news.length === 0 && <h3>No News</h3>}
       {news && news.map((item) => (
         <NewsItem key={item.id} news={item} />
       ))}
-      <Link href="/">
-        <div className={styles.back}>Go Back</div>
+      <Link className="btn-view" href="/">
+        Go Back
       </Link>
     </div>
   );

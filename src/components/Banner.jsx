@@ -4,12 +4,8 @@ import banner from '../../public/Images/banner.png'
 
 export default function Banner() {
   return (
-    <div className='container-fluide'>
-      <div className='row'>
-        <div className='col-md-12'>
-        <Image src={banner} alt='banner'/>
-        </div>
-      </div>
+    <div > 
+        <Image className='container-banner' src={banner} alt='banner'/>
     </div>
   )
 }

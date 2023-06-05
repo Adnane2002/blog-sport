@@ -20,14 +20,14 @@ export default function Home({ news }) {
       <main>
         <Navbar />
         <Banner />
-        <h1 className='my-5'>Latest News</h1>
+        <h1 className='title'>Latest News</h1>
         {news.length === 0 && <h3>No News</h3>}
         {news.map((item) => (
           <NewsItem key={item.id} news={item} />
         ))}
         {news.length > 0 && (
-          <Link href="/news">
-            <div className="btn">View All News</div>
+          <Link className="btn-view"href="/news">
+             View All News
           </Link>
         )}
       </main>

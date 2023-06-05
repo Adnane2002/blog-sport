@@ -20,8 +20,8 @@ export default function SingleNews({ news }) {
           </div>
         )}
         <p>{news.detail}</p>
-        <Link href="/news">
-          <div className={styles.back}>Go Back</div>
+        <Link className="btn-view" href="/news">
+          Go Back
         </Link>
       </div>
   );

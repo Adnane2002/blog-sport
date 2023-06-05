@@ -10,7 +10,7 @@ export default function NewsItem({ news }) {
     
     <div className={styles.news}>
       <div className={styles.info}>
-      <Image
+      <Image className={styles.img}
           src={news.image ? news.image : "No Image"}
           width={150}
           height={100}
