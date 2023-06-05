@@ -32,3 +32,26 @@ export default function SingleNews({ news }) {
     </div>
   );
 }
+export async function getStaticPaths() {
+  const res = await fetch(`${API_URL}/api/news`);
+  const news = await res.json();
+  const paths = news.map((item) => ({
+    params: { slug: item.slug },
+  }));
+
+  return {
+    paths,
+    fallback: true,
+  };
+}
+
+export async function getStaticProps({ params: { slug } }) {
+  const res = await fetch(`${API_URL}/api/news/${slug}`);
+  const singleNews = await res.json();
+  return {
+    props: {
+      news: singleNews[0],
+    },
+    revalidate: 1,
+  };
+}
