@@ -5,10 +5,12 @@ import Link from 'next/link'
 import React from 'react'
 import styles from "../../styles/News.module.css"
 import { API_URL } from "@/config/index";
+import Footer from '@/components/Footer'
 
 
 export default function News({ news }) {
   return (
+    <>
     <div>
       <main>
         <Navbar />
@@ -23,6 +25,8 @@ export default function News({ news }) {
         Go Back
       </Link>
     </div>
+    <Footer/>
+    </>
   );
 }
 export async function getServerSideProps() {

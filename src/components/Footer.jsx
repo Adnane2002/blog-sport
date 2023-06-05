@@ -1,17 +1,9 @@
-import React from 'react'
+import styles from "../styles/Footer.module.css"
 
 export default function Footer() {
   return (
-    <>
-      <div className='container d-flex justify-content-center'>
-        <div className='row'>
-          <div className='col-md-12'>
-            <footer className=''>
-              <p>Copyright &copy; Planet Sport 2023</p>
-            </footer>
-          </div>
-        </div>
-      </div>
-    </>
-  )
+    <footer className={styles.footer}>
+      <p>Copyright &copy; planet sport 2023</p>
+    </footer>
+  );
 }

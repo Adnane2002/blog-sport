@@ -5,6 +5,7 @@ import Banner from '../components/Banner'
 import {API_URL} from '../../config/index'
 import NewsItem from '../components/Newsitem'
 import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,6 +31,7 @@ export default function Home({ news }) {
              View All News
           </Link>
         )}
+        <Footer/>
       </main>
     </>
   );

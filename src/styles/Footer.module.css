@@ -1,0 +1,14 @@
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  height: 200px;
+  background-color: black;
+
+}
+
+.footer p {
+  margin: 70px 0;
+  color: white;
+  font-size: larger;
+  font-weight: 900;
+}
